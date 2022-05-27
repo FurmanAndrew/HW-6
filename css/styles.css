@@ -227,11 +227,13 @@ body {
   height: 581px;
   border-radius: 4px;
   background-color: var(--footer-text);
+  opacity: 1;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform var(--animation-webstudio) scale
-    var(--animation-webstudio);
+  transition: transform var(--animation-webstudio),
+    scale var(--animation-webstudio), opacity var(--animation-webstudio);
 }
 .hero-backdrop.is-hidden .modal-window {
+  opacity: 0.8;
   transform: translate(-50%, -50%) scale(0.8);
 }
 .modal-button {
@@ -594,7 +596,8 @@ body {
   border-radius: 50%;
   color: #afb1b8;
   background-color: #ffffff;
-  transition: background-color var(--animation-webstudio);
+  transition: background-color var(--animation-webstudio),
+    color var(--animation-webstudio);
 }
 .network-link:hover,
 .network-link:focus {
@@ -608,11 +611,11 @@ body {
   height: 20px;
   background-size: cover;
   fill: currentColor;
-  transition: fill var(--animation-webstudio);
 }
 .network-link:hover .icon-network,
 .network-link:focus .icon-network {
   fill: var(--footer-text);
+  color: var(--footer-text);
 }
 /* section fife */
 .clients-title {
