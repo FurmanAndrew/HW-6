@@ -52,7 +52,7 @@
                         <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
                         <form class="modal-form">
                             <label class="modal-label">
-                                <input class="modal-input" type="text" placeholder=" ">
+                                <input class="modal-input" name="name" value="name" type="text" placeholder=" ">
                                 <span class="modal-image">
                                     <svg class="input-icon" width=20px height=20px>
                                         <use href="photo/svg-icon/symbol-defs.svg#icon-person-black"></use>
@@ -61,7 +61,7 @@
                                 <span class="modal-text">Имя</span>
                             </label>
                             <label class="modal-label">
-                                <input class="modal-input" type="text" placeholder=" ">
+                                <input class="modal-input" name="telephon" value="telephon" type="number" placeholder=" ">
                                 <span class="modal-image">
                                     <svg class="input-icon" width=20px height=20px>
                                         <use href="photo/svg-icon/symbol-defs.svg#icon-phone-black"></use>
@@ -70,7 +70,7 @@
                                 <span class="modal-text">Телефон</span>
                             </label>
                             <label class="modal-label">
-                                <input class="modal-input" type="text" placeholder=" ">
+                                <input class="modal-input" name="email" value="email" type="email" placeholder=" ">
                                 <span class="modal-image">
                                     <svg class="input-icon" width=20px height=20px>
                                         <use href="photo/svg-icon/symbol-defs.svg#icon-email-black"></use>
@@ -81,7 +81,7 @@
                             <label class="com-label" for="comment">Комментарий</label>
                             <textarea class="commetns" name="comment" id="comment" rows="5" placeholder="Введите текст"></textarea>
                             <label class="custom-label">
-                                <input class="policy" type="checkbox" name="policy">
+                                <input class="policy" name="policy" value="policy" type="checkbox">
                                 <span class="custom-checkbox">
                                     <svg class="custom-icon" width=16px height=15px>
                                         <use href="photo/svg-icon/symbol-defs.svg#icon-icon-check"></use>
@@ -347,8 +347,8 @@
             </div>
             <div class="footer-mail">
                 <b class="mail-title">Подпишитесь на рассылку</b>
-                <form class="mail-form" action="">
-                    <input class="mail-input" type="email" placeholder="E-mail">
+                <form class="mail-form">
+                    <input class="mail-input" type="email" name="email" value="email" placeholder="E-mail">
                     <button class="mail-button">Подписаться
                         <svg class="icon-send">
                             <use href="photo/svg-icon/symbol-defs.svg#icon-icon-send"></use>
