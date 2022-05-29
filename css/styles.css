@@ -224,12 +224,11 @@ body {
   top: 50%;
   padding: 40px;
   width: 528px;
-  height: 581px;
   border-radius: 4px;
   background-color: var(--footer-text);
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform var(--animation-webstudio),
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
     scale var(--animation-webstudio), opacity var(--animation-webstudio);
 }
 .hero-backdrop.is-hidden .modal-window {
@@ -241,13 +240,11 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 8px;
+  top: 8px;
   width: 30px;
   height: 30px;
   padding: 0;
-  margin-top: 8px;
-  margin-right: 8px;
   text-align: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -275,6 +272,7 @@ body {
   fill: var(--secondary-link-color);
 }
 .modal-title {
+  display: inline-block;
   margin: 0 auto;
   padding: 0px;
   margin-bottom: 12px;
@@ -282,6 +280,7 @@ body {
   font-size: 20px;
   line-height: 23px;
   text-align: center;
+  letter-spacing: 0.03em;
   color: var(--color-title);
 }
 .modal-form {
@@ -293,8 +292,6 @@ body {
 
 .modal-label {
   position: relative;
-  height: 58px;
-  padding-top: 18px;
   margin-bottom: 12px;
 }
 .modal-label:nth-of-type(3) {
@@ -319,9 +316,7 @@ body {
   color: var(--secondary-link-color);
 }
 .modal-text {
-  position: absolute;
-  top: 0;
-  left: 0px;
+  margin-bottom: 4px;
 }
 .modal-image {
   color: #000000;
@@ -330,7 +325,7 @@ body {
 
 .input-icon {
   position: absolute;
-  top: 28px;
+  top: 10px;
   left: 0;
   margin-left: 12px;
   fill: currentColor;
@@ -340,7 +335,7 @@ body {
 }
 .commetns {
   width: 100%;
-  height: 138px;
+  height: 120px;
   margin-bottom: 20px;
   padding: 12px 16px;
   outline: none;
@@ -374,8 +369,16 @@ body {
   border-radius: 2px;
 }
 .contract {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.contract-link {
   color: var(--secondary-link-color);
   text-decoration: underline;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
 }
 .policy {
   position: absolute;
@@ -397,6 +400,9 @@ body {
   width: 100%;
   height: 100%;
   fill: currentColor;
+}
+.policy:focus + .custom-checkbox {
+  outline: 2px solid var(--secondary-link-color);
 }
 .policy:checked + .custom-checkbox {
   outline: transparent;
@@ -734,7 +740,7 @@ body {
 .footer-head {
   display: flex;
   flex-direction: column;
-  margin-right: 93px;
+  margin-right: auto;
 }
 .footer-text {
   margin: 0;
@@ -815,7 +821,7 @@ body {
   border: 1px solid var(--secondary-link-color);
 }
 .mail-input::placeholder {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
 .mail-button {
   display: flex;
